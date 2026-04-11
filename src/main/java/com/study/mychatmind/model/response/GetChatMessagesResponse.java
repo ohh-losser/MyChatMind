@@ -1,0 +1,12 @@
+package com.study.mychatmind.model.response;
+
+import com.study.mychatmind.model.vo.ChatMessageVO;
+import lombok.Builder;
+import lombok.Data;
+
+@Data
+@Builder
+public class GetChatMessagesResponse {
+    private ChatMessageVO[] chatMessages;
+}
+
