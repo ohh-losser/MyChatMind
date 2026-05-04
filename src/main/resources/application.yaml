@@ -22,16 +22,40 @@ spring:
           model: glm-4.6
     # 无问芯穹 (通过 OpenAI 兼容接口)
     openai:
-      api-key: sk-cp-lcttiulg5o66brxk
+      api-key: sk-cp-hh6hrtnkukyfwpkj
       base-url: https://cloud.infini-ai.com/maas/coding
       chat:
         options:
           model: kimi-k2.5
 
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 1243708162@qq.com
+    password: stkerxctiqkkiajg
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+
 mybatis:
   type-aliases-package: com.study.mychatmind.model.entity
   mapper-locations: classpath:mapper/*.xml
   type-handlers-package: com.study.mychatmind.typehandler
+
+
+ollama:
+  base-url: http://localhost:11434
+  embedding-model: bge-m3
+
+
+document:
+  storage:
+    base-path: ./data/documents
+
 
 
 
